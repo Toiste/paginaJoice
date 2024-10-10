@@ -58,19 +58,19 @@ function App() {
     
     <main className='flex relative w-screen  bg-[#202020] flex-col min-h-screen pb-[70px]'>
       <header className='w-full h-[109px] bg-[#D30000] pt-[49px] flex justify-center items-center gap-[12px]'>
-        <img src="./public/whiteHeart.svg" alt="coração branco" className='w-[51px]' />
+        <img src="./whiteHeart.svg" alt="coração branco" className='w-[51px]' />
         <h2 >MINHA MELHOR ESCOLHA FOI VOCÊ!</h2>
       </header>
       <div className="w-full flex justify-center items-center items-center h-full flex-col gap-[17px] pt-[50px]">
-      <video controls poster='/src/assets/capaVideo.png' width="318" height="511" className="rounded-[10px] border-solid border-[2px] border-[#FFFFFF]/65">
-        <source src="/src/assets/videoNiverJoice.mp4" type="video/mp4" />
+      <video controls poster='./src/assets/capaVideo.png' width="318" height="511" className="rounded-[10px] border-solid border-[2px] border-[#FFFFFF]/65">
+        <source src="./src/assets/videoNiverJoice.mp4" type="video/mp4" />
         Seu navegador não suporta o vídeo.
       </video>
       <h1 className='text-[24px]'>Nosso Tempo Juntos</h1>
       <p >{years} ano, {months} meses, {days} dias</p>
       <p>{hours} horas, {minutes} minutos, {seconds} segundos</p>
       </div>
-      <img src="/src/assets/planta.png" alt="planta divisória de seção" className='w-full absolute bottom-[-90px] z-[1]' />
+      <img src="./src/assets/planta.png" alt="planta divisória de seção" className='w-full absolute bottom-[-90px] z-[1]' />
     </main>
   )
 }
