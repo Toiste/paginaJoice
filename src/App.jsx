@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css'
+import videoJoice from "./assets/videoNiverJoice.mp4"
+import poster from "./assets/capaVideo.png"
+import planta from "./assets/planta.png"
 
 function App() {
   const [years, setYears] = useState(Number)
@@ -62,15 +65,15 @@ function App() {
         <h2 >MINHA MELHOR ESCOLHA FOI VOCÊ!</h2>
       </header>
       <div className="w-full flex justify-center items-center items-center h-full flex-col gap-[17px] pt-[50px]">
-      <video controls poster='./src/assets/capaVideo.png' width="318" height="511" className="rounded-[10px] border-solid border-[2px] border-[#FFFFFF]/65">
-        <source src="./src/assets/videoNiverJoice.mp4" type="video/mp4" />
+      <video controls poster={poster} width="318" height="511" className="rounded-[10px] border-solid border-[2px] border-[#FFFFFF]/65">
+        <source src={videoJoice} type="video/mp4" />
         Seu navegador não suporta o vídeo.
       </video>
       <h1 className='text-[24px]'>Nosso Tempo Juntos</h1>
       <p >{years} ano, {months} meses, {days} dias</p>
       <p>{hours} horas, {minutes} minutos, {seconds} segundos</p>
       </div>
-      <img src="./src/assets/planta.png" alt="planta divisória de seção" className='w-full absolute bottom-[-90px] z-[1]' />
+      <img src={planta} alt="planta divisória de seção" className='w-full absolute bottom-[-90px] z-[1]' />
     </main>
   )
 }
