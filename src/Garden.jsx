@@ -3,7 +3,7 @@ import './App.css'
 function Garden() {
 
   return (
-    <section className="flex relative w-screen h-screen items-center   bg-[url('/src/assets/fundoJardim.png')] bg-cover bg-center flex-col pt-[150px]">
+    <section className="flex relative w-screen h-screen items-center   bg-[url('/src/assets/fundoJardim.png')] bg-cover bg-center flex-col pt-[100px]">
       <div className='w-[288px]'>
         <p className='text-black text-center textoBiblia'>
             1 Coríntios 13:4-7
